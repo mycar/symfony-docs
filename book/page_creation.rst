@@ -38,9 +38,11 @@ Creating a Page: Route and Controller
     chapter and can access your new Symfony app in the browser.
 
 Suppose you want to create a page - ``/lucky/number`` - that generates a
-lucky (well, random) number and prints it. To do that, create a class and
-a method inside of it that will be executed when someone goes to ``/lucky/number``::
+lucky (well, random) number and prints it. To do that, create the file LuckyController.php
+in your directory ``src/AppBundle/Controller/``.Then insert a class and a method inside of 
+LuckyController.php that will be executed when someone goes to ``/lucky/number``::
 
+  <?php
     // src/AppBundle/Controller/LuckyController.php
     namespace AppBundle\Controller;
 
@@ -61,6 +63,7 @@ a method inside of it that will be executed when someone goes to ``/lucky/number
             );
         }
     }
+  ?>
 
 Before diving into this, test it out!
 
